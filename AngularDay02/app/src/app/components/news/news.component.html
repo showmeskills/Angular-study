@@ -1,0 +1,29 @@
+
+<h1>binding data</h1>
+<p>{{title}}</p>
+<h1>{{getMsg()}}</h1>
+<button (click)="setMsg('new message from click function')">click to change</button>
+<p>{{initialTile}}</p>
+<br/>
+<br/>
+<h1>binding property</h1>
+<div title="我是一个div">mouse on it</div>
+<br/>
+<br/>
+<div [title]="student">number 3</div>
+<br/>
+<br/>
+<!-- 解析 html 标签 -->
+<span [innerHtml]="content"></span>
+<br/>
+<br/>
+<h1>angular 模版运算</h1>
+<div>1+2={{1+2}}</div>
+<h1>angular 数据循环</h1>
+<ul>
+    <li *ngFor="let user of userInfo">
+        <h1>id:{{user.id}}</h1>
+        <h1>name:{{user.name}}</h1>
+        <h1>age:{{user.age}}</h1>
+    </li>
+</ul>

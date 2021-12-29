@@ -1,0 +1,9 @@
+
+
+<app-add-task [hidden]="isShow" (onAddTask)="onAddTask($event)"></app-add-task>
+<app-todo-item 
+    *ngFor="let task of tasks"
+    [task]="task"
+    (onDeleteTask)="onDeleteTask(task)"
+    (onToggleReminder)="onToggleReminder(task)"
+></app-todo-item>

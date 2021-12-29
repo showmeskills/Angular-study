@@ -1,0 +1,9 @@
+<header class='todo-header'>
+    <h1 class='todo-header-title'>{{getTitle}}</h1>
+    <app-button 
+    class='todo-header-button' 
+    [btnTitle]="btnTitle"
+    [btnStyle]="btnStyle"
+    (handleClick)="handleClick()"
+    ></app-button>
+</header>
